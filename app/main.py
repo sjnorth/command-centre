@@ -1,8 +1,10 @@
+import secrets
+from base64 import b64decode
 from pathlib import Path
 
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, Response
 from fastapi.staticfiles import StaticFiles
 
 from app.config import get_settings
@@ -28,6 +30,30 @@ def create_app() -> FastAPI:
         allow_methods=["*"],
         allow_headers=["*"],
     )
+
+    if settings.auth_username and settings.auth_password:
+        @app.middleware("http")
+        async def basic_auth(request: Request, call_next):
+            if request.url.path == "/health":
+                return await call_next(request)
+            auth = request.headers.get("Authorization", "")
+            if auth.startswith("Basic "):
+                try:
+                    decoded = b64decode(auth[6:]).decode()
+                    username, _, password = decoded.partition(":")
+                    ok = (
+                        secrets.compare_digest(username, settings.auth_username)
+                        and secrets.compare_digest(password, settings.auth_password)
+                    )
+                    if ok:
+                        return await call_next(request)
+                except Exception:
+                    pass
+            return Response(
+                content="Unauthorized",
+                status_code=401,
+                headers={"WWW-Authenticate": 'Basic realm="Command Centre"'},
+            )
 
     @app.get("/health", tags=["system"])
     def health_check():

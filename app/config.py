@@ -19,6 +19,9 @@ class Settings(BaseSettings):
 
     cors_origins: str = "http://localhost:3000,http://localhost:5173"
 
+    auth_username: str = ""
+    auth_password: str = ""
+
 
 @lru_cache
 def get_settings() -> Settings:
