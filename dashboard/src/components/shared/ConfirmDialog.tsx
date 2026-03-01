@@ -27,7 +27,7 @@ export function ConfirmDialog({
 }: ConfirmDialogProps) {
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="bg-zinc-900 border-zinc-800">
+      <DialogContent className="bg-zinc-800/80 border-zinc-700">
         <DialogHeader>
           <DialogTitle className="text-zinc-100">{title}</DialogTitle>
           <DialogDescription className="text-zinc-400">{description}</DialogDescription>

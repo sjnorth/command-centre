@@ -21,7 +21,7 @@ function StatsCard({
   loading: boolean
 }) {
   return (
-    <Card className="bg-zinc-900 border-zinc-800">
+    <Card className="bg-zinc-800/80 border-zinc-700">
       <CardContent className="pt-6">
         <div className="flex items-center gap-3">
           <div className="p-2 rounded-md bg-zinc-800">
@@ -90,7 +90,7 @@ export default function OverviewPage() {
 
       <div className="grid grid-cols-2 gap-6">
         {/* Recent Reflections */}
-        <Card className="bg-zinc-900 border-zinc-800">
+        <Card className="bg-zinc-800/80 border-zinc-700">
           <CardHeader className="pb-3">
             <CardTitle className="text-sm font-medium text-zinc-400 flex items-center justify-between">
               Recent reflections
@@ -123,7 +123,7 @@ export default function OverviewPage() {
         </Card>
 
         {/* Pending Action Items */}
-        <Card className="bg-zinc-900 border-zinc-800">
+        <Card className="bg-zinc-800/80 border-zinc-700">
           <CardHeader className="pb-3">
             <CardTitle className="text-sm font-medium text-zinc-400 flex items-center justify-between">
               High priority items

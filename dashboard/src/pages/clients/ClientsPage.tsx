@@ -79,7 +79,7 @@ export default function ClientsPage() {
       ) : (
         <div className="grid grid-cols-2 gap-4">
           {clients?.map((client) => (
-            <Card key={client.id} className="bg-zinc-900 border-zinc-800 hover:border-zinc-700 transition-colors">
+            <Card key={client.id} className="bg-zinc-800/80 border-zinc-700 hover:border-zinc-700 transition-colors">
               <CardHeader className="pb-2">
                 <div className="flex items-start justify-between gap-2">
                   <div className="min-w-0">
@@ -121,7 +121,7 @@ export default function ClientsPage() {
       )}
 
       <Dialog open={createOpen} onOpenChange={setCreateOpen}>
-        <DialogContent className="bg-zinc-900 border-zinc-800">
+        <DialogContent className="bg-zinc-800/80 border-zinc-700">
           <DialogHeader>
             <DialogTitle className="text-zinc-100">New client</DialogTitle>
           </DialogHeader>
@@ -134,7 +134,7 @@ export default function ClientsPage() {
       </Dialog>
 
       <Dialog open={!!editClient} onOpenChange={(open) => !open && setEditClient(null)}>
-        <DialogContent className="bg-zinc-900 border-zinc-800">
+        <DialogContent className="bg-zinc-800/80 border-zinc-700">
           <DialogHeader>
             <DialogTitle className="text-zinc-100">Edit client</DialogTitle>
           </DialogHeader>

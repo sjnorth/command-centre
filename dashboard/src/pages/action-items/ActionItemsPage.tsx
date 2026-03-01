@@ -100,10 +100,10 @@ export default function ActionItemsPage() {
           </TabsList>
         </Tabs>
         <Select value={priorityFilter} onValueChange={(v) => setPriorityFilter(v as ActionItem['priority'] | 'all')}>
-          <SelectTrigger className="w-36 bg-zinc-900 border-zinc-800 text-zinc-300 text-xs h-9">
+          <SelectTrigger className="w-36 bg-zinc-800/80 border-zinc-700 text-zinc-300 text-xs h-9">
             <SelectValue placeholder="Priority" />
           </SelectTrigger>
-          <SelectContent className="bg-zinc-900 border-zinc-800">
+          <SelectContent className="bg-zinc-800/80 border-zinc-700">
             <SelectItem value="all" className="text-zinc-300 text-xs">All priorities</SelectItem>
             <SelectItem value="urgent" className="text-zinc-300 text-xs">Urgent</SelectItem>
             <SelectItem value="high" className="text-zinc-300 text-xs">High</SelectItem>
@@ -162,7 +162,7 @@ export default function ActionItemsPage() {
       )}
 
       <Dialog open={createOpen} onOpenChange={setCreateOpen}>
-        <DialogContent className="bg-zinc-900 border-zinc-800">
+        <DialogContent className="bg-zinc-800/80 border-zinc-700">
           <DialogHeader>
             <DialogTitle className="text-zinc-100">New action item</DialogTitle>
           </DialogHeader>

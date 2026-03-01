@@ -70,7 +70,7 @@ function ReflectionCard({
   const currentSentiment = analysisResult?.reflection.sentiment ?? reflection.sentiment
 
   return (
-    <Card className="bg-zinc-900 border-zinc-800 hover:border-zinc-700 transition-colors">
+    <Card className="bg-zinc-800/80 border-zinc-700 hover:border-zinc-700 transition-colors">
       <CardContent className="pt-4 pb-4">
         <div className="flex items-start justify-between gap-3 mb-2">
           <p className="text-zinc-200 text-sm leading-relaxed flex-1">{reflection.content}</p>

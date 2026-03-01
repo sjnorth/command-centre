@@ -101,7 +101,7 @@ export default function ProjectDetailPage() {
 
       <div className="grid grid-cols-2 gap-6">
         {/* Linked clients */}
-        <Card className="bg-zinc-900 border-zinc-800">
+        <Card className="bg-zinc-800/80 border-zinc-700">
           <CardHeader className="pb-3">
             <CardTitle className="text-sm font-medium text-zinc-400">Linked clients</CardTitle>
           </CardHeader>
@@ -154,7 +154,7 @@ export default function ProjectDetailPage() {
         </Card>
 
         {/* Action items */}
-        <Card className="bg-zinc-900 border-zinc-800">
+        <Card className="bg-zinc-800/80 border-zinc-700">
           <CardHeader className="pb-3">
             <CardTitle className="text-sm font-medium text-zinc-400 flex items-center justify-between">
               Action items

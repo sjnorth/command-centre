@@ -87,7 +87,7 @@ export default function ProjectsPage() {
       ) : (
         <div className="grid grid-cols-2 gap-4">
           {projects?.map((project) => (
-            <Card key={project.id} className="bg-zinc-900 border-zinc-800 hover:border-zinc-700 transition-colors">
+            <Card key={project.id} className="bg-zinc-800/80 border-zinc-700 hover:border-zinc-700 transition-colors">
               <CardHeader className="pb-2">
                 <div className="flex items-start justify-between gap-2">
                   <Link to={`/projects/${project.id}`} className="flex-1 min-w-0">
@@ -130,7 +130,7 @@ export default function ProjectsPage() {
 
       {/* Create dialog */}
       <Dialog open={createOpen} onOpenChange={setCreateOpen}>
-        <DialogContent className="bg-zinc-900 border-zinc-800">
+        <DialogContent className="bg-zinc-800/80 border-zinc-700">
           <DialogHeader>
             <DialogTitle className="text-zinc-100">New project</DialogTitle>
           </DialogHeader>
@@ -144,7 +144,7 @@ export default function ProjectsPage() {
 
       {/* Edit dialog */}
       <Dialog open={!!editProject} onOpenChange={(open) => !open && setEditProject(null)}>
-        <DialogContent className="bg-zinc-900 border-zinc-800">
+        <DialogContent className="bg-zinc-800/80 border-zinc-700">
           <DialogHeader>
             <DialogTitle className="text-zinc-100">Edit project</DialogTitle>
           </DialogHeader>

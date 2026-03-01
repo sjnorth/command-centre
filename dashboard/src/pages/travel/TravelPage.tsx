@@ -82,7 +82,7 @@ export default function TravelPage() {
           {plans?.map((plan) => {
             const upcoming = isUpcoming(plan.start_date)
             return (
-              <Card key={plan.id} className={`bg-zinc-900 border-zinc-800 hover:border-zinc-700 transition-colors ${upcoming ? 'border-l-2 border-l-emerald-500' : ''}`}>
+              <Card key={plan.id} className={`bg-zinc-800/80 border-zinc-700 hover:border-zinc-700 transition-colors ${upcoming ? 'border-l-2 border-l-emerald-500' : ''}`}>
                 <CardHeader className="pb-2">
                   <div className="flex items-start justify-between gap-2">
                     <div className="flex items-center gap-2">
@@ -121,7 +121,7 @@ export default function TravelPage() {
       )}
 
       <Dialog open={createOpen} onOpenChange={setCreateOpen}>
-        <DialogContent className="bg-zinc-900 border-zinc-800">
+        <DialogContent className="bg-zinc-800/80 border-zinc-700">
           <DialogHeader>
             <DialogTitle className="text-zinc-100">New trip</DialogTitle>
           </DialogHeader>
@@ -134,7 +134,7 @@ export default function TravelPage() {
       </Dialog>
 
       <Dialog open={!!editPlan} onOpenChange={(open) => !open && setEditPlan(null)}>
-        <DialogContent className="bg-zinc-900 border-zinc-800">
+        <DialogContent className="bg-zinc-800/80 border-zinc-700">
           <DialogHeader>
             <DialogTitle className="text-zinc-100">Edit trip</DialogTitle>
           </DialogHeader>
