@@ -70,7 +70,7 @@ function ReflectionCard({
   const currentSentiment = analysisResult?.reflection.sentiment ?? reflection.sentiment
 
   return (
-    <Card className="bg-zinc-800/80 border-zinc-700 hover:border-zinc-700 transition-colors">
+    <Card className="bg-zinc-700/60 border-zinc-600 hover:border-zinc-700 transition-colors">
       <CardContent className="pt-4 pb-4">
         <div className="flex items-start justify-between gap-3 mb-2">
           <p className="text-zinc-200 text-sm leading-relaxed flex-1">{reflection.content}</p>
@@ -164,17 +164,17 @@ function NewReflectionForm({ onClose }: { onClose: () => void }) {
           value={content}
           onChange={(e) => setContent(e.target.value)}
           placeholder="What happened today? How did it go?"
-          className="bg-zinc-800 border-zinc-700 text-zinc-100 placeholder:text-zinc-500 resize-none mb-3"
+          className="bg-zinc-700 border-zinc-600 text-zinc-100 placeholder:text-zinc-500 resize-none mb-3"
           rows={4}
           autoFocus
         />
         <div className="flex items-center gap-2 mb-3">
           {projects && projects.length > 0 && (
             <Select value={projectId} onValueChange={setProjectId}>
-              <SelectTrigger className="bg-zinc-800 border-zinc-700 text-zinc-400 text-xs h-8 w-44">
+              <SelectTrigger className="bg-zinc-700 border-zinc-600 text-zinc-400 text-xs h-8 w-44">
                 <SelectValue placeholder="Link project…" />
               </SelectTrigger>
-              <SelectContent className="bg-zinc-800 border-zinc-700">
+              <SelectContent className="bg-zinc-700 border-zinc-600">
                 <SelectItem value="none" className="text-zinc-400 text-xs">No project</SelectItem>
                 {projects.map((p) => (
                   <SelectItem key={p.id} value={p.id} className="text-zinc-100 text-xs">{p.name}</SelectItem>
@@ -184,10 +184,10 @@ function NewReflectionForm({ onClose }: { onClose: () => void }) {
           )}
           {clients && clients.length > 0 && (
             <Select value={clientId} onValueChange={setClientId}>
-              <SelectTrigger className="bg-zinc-800 border-zinc-700 text-zinc-400 text-xs h-8 w-44">
+              <SelectTrigger className="bg-zinc-700 border-zinc-600 text-zinc-400 text-xs h-8 w-44">
                 <SelectValue placeholder="Link client…" />
               </SelectTrigger>
-              <SelectContent className="bg-zinc-800 border-zinc-700">
+              <SelectContent className="bg-zinc-700 border-zinc-600">
                 <SelectItem value="none" className="text-zinc-400 text-xs">No client</SelectItem>
                 {clients.map((c) => (
                   <SelectItem key={c.id} value={c.id} className="text-zinc-100 text-xs">{c.name}</SelectItem>

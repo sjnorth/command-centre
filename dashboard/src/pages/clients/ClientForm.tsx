@@ -54,7 +54,7 @@ export default function ClientForm({ defaultValues, onSubmit, loading, onCancel 
           <FormItem>
             <FormLabel className="text-zinc-300">Name</FormLabel>
             <FormControl>
-              <Input placeholder="Client name" className="bg-zinc-800 border-zinc-700 text-zinc-100 placeholder:text-zinc-500" {...field} />
+              <Input placeholder="Client name" className="bg-zinc-700 border-zinc-600 text-zinc-100 placeholder:text-zinc-500" {...field} />
             </FormControl>
             <FormMessage />
           </FormItem>
@@ -63,7 +63,7 @@ export default function ClientForm({ defaultValues, onSubmit, loading, onCancel 
           <FormItem>
             <FormLabel className="text-zinc-300">Company</FormLabel>
             <FormControl>
-              <Input placeholder="Company name" className="bg-zinc-800 border-zinc-700 text-zinc-100 placeholder:text-zinc-500" {...field} />
+              <Input placeholder="Company name" className="bg-zinc-700 border-zinc-600 text-zinc-100 placeholder:text-zinc-500" {...field} />
             </FormControl>
             <FormMessage />
           </FormItem>
@@ -73,7 +73,7 @@ export default function ClientForm({ defaultValues, onSubmit, loading, onCancel 
             <FormItem>
               <FormLabel className="text-zinc-300">Email</FormLabel>
               <FormControl>
-                <Input type="email" placeholder="email@example.com" className="bg-zinc-800 border-zinc-700 text-zinc-100 placeholder:text-zinc-500" {...field} />
+                <Input type="email" placeholder="email@example.com" className="bg-zinc-700 border-zinc-600 text-zinc-100 placeholder:text-zinc-500" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -82,7 +82,7 @@ export default function ClientForm({ defaultValues, onSubmit, loading, onCancel 
             <FormItem>
               <FormLabel className="text-zinc-300">Phone</FormLabel>
               <FormControl>
-                <Input placeholder="+61 4xx xxx xxx" className="bg-zinc-800 border-zinc-700 text-zinc-100 placeholder:text-zinc-500" {...field} />
+                <Input placeholder="+61 4xx xxx xxx" className="bg-zinc-700 border-zinc-600 text-zinc-100 placeholder:text-zinc-500" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -92,7 +92,7 @@ export default function ClientForm({ defaultValues, onSubmit, loading, onCancel 
           <FormItem>
             <FormLabel className="text-zinc-300">Notes</FormLabel>
             <FormControl>
-              <Textarea placeholder="Any notes about this client…" className="bg-zinc-800 border-zinc-700 text-zinc-100 placeholder:text-zinc-500 resize-none" rows={3} {...field} />
+              <Textarea placeholder="Any notes about this client…" className="bg-zinc-700 border-zinc-600 text-zinc-100 placeholder:text-zinc-500 resize-none" rows={3} {...field} />
             </FormControl>
             <FormMessage />
           </FormItem>

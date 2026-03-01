@@ -101,7 +101,7 @@ export default function ProjectDetailPage() {
 
       <div className="grid grid-cols-2 gap-6">
         {/* Linked clients */}
-        <Card className="bg-zinc-800/80 border-zinc-700">
+        <Card className="bg-zinc-700/60 border-zinc-600">
           <CardHeader className="pb-3">
             <CardTitle className="text-sm font-medium text-zinc-400">Linked clients</CardTitle>
           </CardHeader>
@@ -129,10 +129,10 @@ export default function ProjectDetailPage() {
             {availableClients.length > 0 && (
               <div className="flex gap-2">
                 <Select value={selectedClientId} onValueChange={setSelectedClientId}>
-                  <SelectTrigger className="bg-zinc-800 border-zinc-700 text-zinc-100 text-xs h-8 flex-1">
+                  <SelectTrigger className="bg-zinc-700 border-zinc-600 text-zinc-100 text-xs h-8 flex-1">
                     <SelectValue placeholder="Add a client…" />
                   </SelectTrigger>
-                  <SelectContent className="bg-zinc-800 border-zinc-700">
+                  <SelectContent className="bg-zinc-700 border-zinc-600">
                     {availableClients.map((c) => (
                       <SelectItem key={c.id} value={c.id} className="text-zinc-100 text-xs">
                         {c.name}{c.company ? ` (${c.company})` : ''}
@@ -154,7 +154,7 @@ export default function ProjectDetailPage() {
         </Card>
 
         {/* Action items */}
-        <Card className="bg-zinc-800/80 border-zinc-700">
+        <Card className="bg-zinc-700/60 border-zinc-600">
           <CardHeader className="pb-3">
             <CardTitle className="text-sm font-medium text-zinc-400 flex items-center justify-between">
               Action items

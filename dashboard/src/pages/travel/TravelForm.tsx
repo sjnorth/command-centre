@@ -54,7 +54,7 @@ export default function TravelForm({ defaultValues, onSubmit, loading, onCancel 
           <FormItem>
             <FormLabel className="text-zinc-300">Destination</FormLabel>
             <FormControl>
-              <Input placeholder="e.g. Tokyo, Japan" className="bg-zinc-800 border-zinc-700 text-zinc-100 placeholder:text-zinc-500" {...field} />
+              <Input placeholder="e.g. Tokyo, Japan" className="bg-zinc-700 border-zinc-600 text-zinc-100 placeholder:text-zinc-500" {...field} />
             </FormControl>
             <FormMessage />
           </FormItem>
@@ -64,7 +64,7 @@ export default function TravelForm({ defaultValues, onSubmit, loading, onCancel 
             <FormItem>
               <FormLabel className="text-zinc-300">Start date</FormLabel>
               <FormControl>
-                <Input type="date" className="bg-zinc-800 border-zinc-700 text-zinc-100" {...field} />
+                <Input type="date" className="bg-zinc-700 border-zinc-600 text-zinc-100" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -73,7 +73,7 @@ export default function TravelForm({ defaultValues, onSubmit, loading, onCancel 
             <FormItem>
               <FormLabel className="text-zinc-300">End date</FormLabel>
               <FormControl>
-                <Input type="date" className="bg-zinc-800 border-zinc-700 text-zinc-100" {...field} />
+                <Input type="date" className="bg-zinc-700 border-zinc-600 text-zinc-100" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -83,7 +83,7 @@ export default function TravelForm({ defaultValues, onSubmit, loading, onCancel 
           <FormItem>
             <FormLabel className="text-zinc-300">Purpose</FormLabel>
             <FormControl>
-              <Input placeholder="Business, conference, holiday…" className="bg-zinc-800 border-zinc-700 text-zinc-100 placeholder:text-zinc-500" {...field} />
+              <Input placeholder="Business, conference, holiday…" className="bg-zinc-700 border-zinc-600 text-zinc-100 placeholder:text-zinc-500" {...field} />
             </FormControl>
             <FormMessage />
           </FormItem>
@@ -92,7 +92,7 @@ export default function TravelForm({ defaultValues, onSubmit, loading, onCancel 
           <FormItem>
             <FormLabel className="text-zinc-300">Notes</FormLabel>
             <FormControl>
-              <Textarea placeholder="Any additional notes…" className="bg-zinc-800 border-zinc-700 text-zinc-100 placeholder:text-zinc-500 resize-none" rows={3} {...field} />
+              <Textarea placeholder="Any additional notes…" className="bg-zinc-700 border-zinc-600 text-zinc-100 placeholder:text-zinc-500 resize-none" rows={3} {...field} />
             </FormControl>
             <FormMessage />
           </FormItem>

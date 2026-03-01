@@ -53,7 +53,7 @@ export default function ActionItemForm({ onSubmit, loading, onCancel }: ActionIt
           <FormItem>
             <FormLabel className="text-zinc-300">Title</FormLabel>
             <FormControl>
-              <Input placeholder="What needs to be done?" className="bg-zinc-800 border-zinc-700 text-zinc-100 placeholder:text-zinc-500" {...field} />
+              <Input placeholder="What needs to be done?" className="bg-zinc-700 border-zinc-600 text-zinc-100 placeholder:text-zinc-500" {...field} />
             </FormControl>
             <FormMessage />
           </FormItem>
@@ -62,7 +62,7 @@ export default function ActionItemForm({ onSubmit, loading, onCancel }: ActionIt
           <FormItem>
             <FormLabel className="text-zinc-300">Description</FormLabel>
             <FormControl>
-              <Textarea placeholder="Optional details…" className="bg-zinc-800 border-zinc-700 text-zinc-100 placeholder:text-zinc-500 resize-none" rows={2} {...field} />
+              <Textarea placeholder="Optional details…" className="bg-zinc-700 border-zinc-600 text-zinc-100 placeholder:text-zinc-500 resize-none" rows={2} {...field} />
             </FormControl>
             <FormMessage />
           </FormItem>
@@ -73,11 +73,11 @@ export default function ActionItemForm({ onSubmit, loading, onCancel }: ActionIt
               <FormLabel className="text-zinc-300">Priority</FormLabel>
               <Select onValueChange={field.onChange} defaultValue={field.value}>
                 <FormControl>
-                  <SelectTrigger className="bg-zinc-800 border-zinc-700 text-zinc-100">
+                  <SelectTrigger className="bg-zinc-700 border-zinc-600 text-zinc-100">
                     <SelectValue />
                   </SelectTrigger>
                 </FormControl>
-                <SelectContent className="bg-zinc-800 border-zinc-700">
+                <SelectContent className="bg-zinc-700 border-zinc-600">
                   <SelectItem value="low" className="text-zinc-100">Low</SelectItem>
                   <SelectItem value="medium" className="text-zinc-100">Medium</SelectItem>
                   <SelectItem value="high" className="text-zinc-100">High</SelectItem>
@@ -91,7 +91,7 @@ export default function ActionItemForm({ onSubmit, loading, onCancel }: ActionIt
             <FormItem>
               <FormLabel className="text-zinc-300">Due date</FormLabel>
               <FormControl>
-                <Input type="date" className="bg-zinc-800 border-zinc-700 text-zinc-100" {...field} />
+                <Input type="date" className="bg-zinc-700 border-zinc-600 text-zinc-100" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -103,11 +103,11 @@ export default function ActionItemForm({ onSubmit, loading, onCancel }: ActionIt
               <FormLabel className="text-zinc-300">Project</FormLabel>
               <Select onValueChange={field.onChange} defaultValue={field.value}>
                 <FormControl>
-                  <SelectTrigger className="bg-zinc-800 border-zinc-700 text-zinc-100">
+                  <SelectTrigger className="bg-zinc-700 border-zinc-600 text-zinc-100">
                     <SelectValue placeholder="Link to a project (optional)" />
                   </SelectTrigger>
                 </FormControl>
-                <SelectContent className="bg-zinc-800 border-zinc-700">
+                <SelectContent className="bg-zinc-700 border-zinc-600">
                   <SelectItem value="none" className="text-zinc-100">No project</SelectItem>
                   {projects.map((p) => (
                     <SelectItem key={p.id} value={p.id} className="text-zinc-100">{p.name}</SelectItem>

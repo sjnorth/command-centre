@@ -58,7 +58,7 @@ export default function ProjectForm({ defaultValues, onSubmit, loading, onCancel
               <FormControl>
                 <Input
                   placeholder="Project name"
-                  className="bg-zinc-800 border-zinc-700 text-zinc-100 placeholder:text-zinc-500"
+                  className="bg-zinc-700 border-zinc-600 text-zinc-100 placeholder:text-zinc-500"
                   {...field}
                 />
               </FormControl>
@@ -75,7 +75,7 @@ export default function ProjectForm({ defaultValues, onSubmit, loading, onCancel
               <FormControl>
                 <Textarea
                   placeholder="What's this project about?"
-                  className="bg-zinc-800 border-zinc-700 text-zinc-100 placeholder:text-zinc-500 resize-none"
+                  className="bg-zinc-700 border-zinc-600 text-zinc-100 placeholder:text-zinc-500 resize-none"
                   rows={3}
                   {...field}
                 />
@@ -92,11 +92,11 @@ export default function ProjectForm({ defaultValues, onSubmit, loading, onCancel
               <FormLabel className="text-zinc-300">Status</FormLabel>
               <Select onValueChange={field.onChange} defaultValue={field.value}>
                 <FormControl>
-                  <SelectTrigger className="bg-zinc-800 border-zinc-700 text-zinc-100">
+                  <SelectTrigger className="bg-zinc-700 border-zinc-600 text-zinc-100">
                     <SelectValue />
                   </SelectTrigger>
                 </FormControl>
-                <SelectContent className="bg-zinc-800 border-zinc-700">
+                <SelectContent className="bg-zinc-700 border-zinc-600">
                   <SelectItem value="active" className="text-zinc-100">Active</SelectItem>
                   <SelectItem value="on_hold" className="text-zinc-100">On Hold</SelectItem>
                   <SelectItem value="completed" className="text-zinc-100">Completed</SelectItem>
